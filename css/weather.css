@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    font-family:"Zen Maru Gothic","Kosugi Maru","Noto Serif TC",sans-serif,serif;
+}
+body{
+    width: 100%;
+    margin: 0;
+    background-image: url(../background.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.nav{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background-color: #D0D0D0;
+    justify-content:space-between;
+}
+@media (max-width:696px) {
+    .nav{
+        flex-direction: column;
+        height: 100px;
+    }
+}
+.nav-left{
+    width: 40%;
+    font-size: 36px;
+    margin: 0 0 0 20px;
+    font-weight: bold;
+}
+@media (max-width:696px) {
+    .nav-left{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.nav-right{
+    width: 60%;
+    display: flex;
+    justify-content: end;
+}
+@media (max-width:696px) {
+    .nav-right{
+        width: 100%;
+    }
+}
+.nav-btn{
+    width:100px;
+    height: 50px;
+    border: unset;
+    background-color: unset;
+    font-weight:bold;
+    cursor: pointer;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 0 10px 0 0;
+}
+@media (max-width:390px) {
+    .nav-btn{
+        font-size: 14px;
+    }
+}
+button:focus{
+    background-color:bisque;
+}
+button:hover{
+    background-color:bisque;
+}
+
+.card-region{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 80px 0 0 0;
+}
+@media (max-width:696px) {
+    .card-region{
+        padding: 130px 0 0 0;
+    }
+}
+.card{    
+    background-color: rgba(135, 138, 138, 0.836);
+    border: 1px solid;    
+    width: 300px;
+    height: 400px;
+    margin: 60px 0 60px 0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.temper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    column-gap: 5px;
+    padding-bottom: 20px;
+}
+.minTemp{
+    color: blue;
+}
+.maxTemp{
+    color:#DC143C;
+}
+
+.maxTemp, .minTemp{
+    font-weight: bold;
+    font-size: 24px;
+}
